@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Shangwen Zhu - researcher in AI video generation, diffusion models, world models, and action-conditioned visual learning."
+    />
+    <meta property="og:title" content="Shangwen Zhu" />
+    <meta
+      property="og:description"
+      content="AI video generation, world models, diffusion sampling, and game simulation."
+    />
+    <meta property="og:type" content="website" />
+    <title>Shangwen Zhu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">Shangwen Zhu</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-main">
+          <p class="eyebrow">AI Video Generation · Diffusion Models · World Models</p>
+          <h1>Shangwen Zhu</h1>
+          <p class="lead">
+            Master's student in Computer Science and Technology at Shanghai Jiao
+            Tong University. I work on video generation, diffusion sampling,
+            natural-language action interfaces, and world models for dynamic
+            visual environments.
+          </p>
+          <div class="button-row">
+            <a class="button primary" href="mailto:zhushangwen6@gmail.com">Email</a>
+            <a class="button" href="https://github.com/zhushangwen">GitHub</a>
+            <a class="button" href="https://www.kaggle.com/shangwenzhu">Kaggle</a>
+          </div>
+        </div>
+
+        <aside class="profile-card" aria-label="Profile summary">
+          <div class="avatar" aria-hidden="true">SZ</div>
+          <h2>Research Focus</h2>
+          <p>
+            I am interested in systems that learn dynamic worlds from videos,
+            games, and interactions, especially when models need to reason about
+            motion, control, temporal boundaries, and cross-entity generalization.
+          </p>
+          <div class="link-stack">
+            <a href="mailto:zhushangwen6@gmail.com">zhushangwen6@gmail.com</a>
+            <a href="https://github.com/zhushangwen">github.com/zhushangwen</a>
+            <a href="https://www.kaggle.com/shangwenzhu">kaggle.com/shangwenzhu</a>
+          </div>
+        </aside>
+      </section>
+
+      <section id="research" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Interests</h2>
+        </div>
+        <div class="interest-grid">
+          <article class="card">
+            <h3>Video Generation</h3>
+            <p>
+              Controllable video generation, temporal consistency, event-aware
+              generation, and natural-language interfaces for visual actions.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Diffusion Acceleration</h3>
+            <p>
+              Training-free acceleration, guidance scheduling, efficient sampling,
+              and practical methods that preserve generation quality.
+            </p>
+          </article>
+          <article class="card">
+            <h3>World Models</h3>
+            <p>
+              Long-horizon dynamic environments, game simulation, action-conditioned
+              prediction, and cross-entity transfer.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Research Experience</p>
+          <h2>Selected Projects</h2>
+        </div>
+        <div class="timeline">
+          <article class="entry">
+            <div class="entry-kicker">World Models · Video Generation</div>
+            <h3>Incantation: Natural Language as the Action Interface for Multi-Entity Video World Models</h3>
+            <p class="meta">Core Member · Advisor: Fan Cheng</p>
+            <p>
+              Proposed natural language as a per-entity action interface for
+              interactive video world models, enabling simultaneous multi-entity
+              control and concept-level cross-entity action transfer. Built a
+              frame-local language-conditioned video generation framework with
+              real-time long-horizon streaming via Self-Forcing distillation and
+              a RoPE-decoupled sliding KV-cache.
+            </p>
+          </article>
+
+          <article class="entry">
+            <div class="entry-kicker">Video Generation · Temporal Control</div>
+            <h3>TIE: Time Interval Encoding for Video Generation over Events</h3>
+            <p class="meta">Co-First Author · Advisor: Ruili Feng</p>
+            <p>
+              Proposed Time Interval Encoding, a plug-and-play interval-aware
+              generalization of rotary embeddings that represents event durations
+              and temporal boundaries inside DiT cross-attention. The method
+              improves temporal constraint satisfaction and boundary accuracy for
+              concurrent and overlapping event control.
+            </p>
+          </article>
+
+          <article class="entry">
+            <div class="entry-kicker">Diffusion Models · Efficient Sampling</div>
+            <h3>MAMBO-G: Magnitude-Aware Mitigation for Boosted Guidance</h3>
+            <p class="meta">First Author · Accepted by ICML 2026 · Advisors: Ruili Feng, Fan Cheng</p>
+            <p>
+              Proposed a training-free guidance scheduler that mitigates
+              generation collapse by dynamically modulating CFG scales based on
+              update-to-velocity magnitude ratios. Achieved 3-4x inference
+              acceleration on SD3.5, Lumina, and Wan2.1 with zero overhead. The
+              method was officially merged into the Hugging Face diffusers library.
+            </p>
+          </article>
+
+          <article class="entry">
+            <div class="entry-kicker">Diffusion Models · Sampling Acceleration</div>
+            <h3>Accelerating Diffusion Sampling via Exploiting Local Transition Coherence</h3>
+            <p class="meta">First Author · Accepted by ICCV 2025 · Advisor: Fan Cheng</p>
+            <p>
+              Proposed a training-free approach for avoiding redundant computation
+              during diffusion sampling by leveraging local transition coherence
+              between adjacent time steps. The method is orthogonal to existing
+              acceleration techniques and supported by theoretical and empirical
+              analysis.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Publications</p>
+          <h2>Papers & Preprints</h2>
+        </div>
+        <div class="paper-list">
+          <article class="paper">
+            <h3>MAMBO-G: Magnitude-Aware Mitigation for Boosted Guidance</h3>
+            <p class="meta">Shangwen Zhu, Qianyu Peng, Zhilei Shu, Ruili Feng, Fan Cheng · ICML 2026</p>
+            <p>Training-free guidance scheduling for faster and more stable diffusion generation.</p>
+            <div class="paper-links">
+              <a href="#">Paper</a>
+              <a href="#">Code</a>
+              <a href="#">Diffusers</a>
+            </div>
+          </article>
+          <article class="paper">
+            <h3>Accelerating Diffusion Sampling via Exploiting Local Transition Coherence</h3>
+            <p class="meta">Shangwen Zhu, Han Zhang, Zhantao Yang, Qianyu Peng, Fan Cheng · ICCV 2025</p>
+            <p>Efficient diffusion sampling by exploiting proportional transition structure across nearby steps.</p>
+            <div class="paper-links">
+              <a href="#">Paper</a>
+              <a href="#">Code</a>
+            </div>
+          </article>
+          <article class="paper">
+            <h3>TIE: Time Interval Encoding for Video Generation over Events</h3>
+            <p class="meta">Zhilei Shu, Shangwen Zhu, Ruili Feng · Preprint</p>
+            <p>Interval-aware temporal encoding for event-controlled video generation.</p>
+            <div class="paper-links">
+              <a href="#">Paper</a>
+              <a href="#">Project</a>
+            </div>
+          </article>
+          <article class="paper">
+            <h3>Incantation: Natural Language as the Action Interface for Multi-Entity Video World Models</h3>
+            <p class="meta">Shangwen Zhu, Qianyu Peng, Zhao Pu, Zhilei Shu, Fan Cheng · Preprint</p>
+            <p>Natural-language action interfaces for interactive multi-entity video world models.</p>
+            <div class="paper-links">
+              <a href="#">Project</a>
+              <a href="#">Paper</a>
+              <a href="#">Demo</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section split-section">
+        <div>
+          <p class="eyebrow">Education</p>
+          <h2>Education</h2>
+        </div>
+        <div class="edu-list">
+          <article class="compact-card">
+            <h3>Shanghai Jiao Tong University</h3>
+            <p class="meta">M.Tech. in Computer Science and Technology · Aug 2024 - Apr 2027</p>
+            <p>Coursework: Artificial Intelligence, Machine Learning, Blockchain.</p>
+          </article>
+          <article class="compact-card">
+            <h3>Xi'an Jiaotong University</h3>
+            <p class="meta">B.Tech. in Computer Science and Technology · Aug 2020 - Jun 2024</p>
+            <p>GPA: 3.97 · Rank: 2/198. Coursework: Operating Systems, Data Structures, Algorithms, AI, Machine Learning, Networking, Databases.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="awards" class="section split-section">
+        <div>
+          <p class="eyebrow">Recognition</p>
+          <h2>Honors & Awards</h2>
+        </div>
+        <ul class="award-list">
+          <li>National Scholarship, 2021</li>
+          <li>National Scholarship, 2023</li>
+          <li>Silver Medal, Kaggle Competition, 2024</li>
+          <li>Meritorious Winner, Mathematical Contest in Modeling, 2022</li>
+          <li>First Prize, China Undergraduate Mathematical Contest in Modeling, 2022</li>
+          <li>Second Prize, Mathematics Competition of Chinese College Students, 2022</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Get in touch</h2>
+          <p>
+            I am open to conversations about AI video generation, diffusion
+            models, world models, game simulation, and research collaboration.
+          </p>
+        </div>
+        <a class="button primary" href="mailto:zhushangwen6@gmail.com">zhushangwen6@gmail.com</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Shangwen Zhu. Last updated May 2026.</p>
+    </footer>
+  </body>
+</html>
